@@ -77,4 +77,11 @@ class TV:
         else:
             print(f"You turned {self.tvName}'s channel to {self.channel}")
 # Add instance method for volumeup
+    def volumeUp(self):
+        self.volumeLevel += 1
+        if self.volumeLevel > 7:
+            self.volumeLevel -= 1
+            print(f"{self.tvName}: 7 is the highest volume")
+        else:
+            print(f"You turned {self.tvName}'s volume to {self.volumeLevel}")
 # Add instance method for volumedown
