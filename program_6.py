@@ -36,6 +36,17 @@ class TV:
     def getChannel(self):
         print(f"{self.tvName} is on channel {self.channel}")
 # Add instance method for setchannel
+    def setChannel(self, channel):
+        self.channel = channel
+        if self.channel > 120:
+            self.channel = 120
+            print(f"{self.tvName}: There are no channels higher than 120")
+        if self.channel < 1:
+            self.channel = 1
+            print(f"{self.tvName}: There are no more channels lower than 1")
+        else:
+            print(f"You set {self.tvName}'s channel to {self.channel}")
+
 # Add instance method for getvolume
 # Add instance method for setvolume
 # Add instance method for channelup
