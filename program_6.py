@@ -92,3 +92,6 @@ class TV:
             print(f"{self.tvName}: 1 is the lowest volume")
         else:
             print(f"You turned {self.tvName}'s volume to {self.volumeLevel}")
+
+    def show(self):
+        print(f"{self.tvName}'s channel is {self.channel} and volume level is {self.volumeLevel}")
