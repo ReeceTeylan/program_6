@@ -46,8 +46,9 @@ class TV:
             print(f"{self.tvName}: There are no more channels lower than 1")
         else:
             print(f"You set {self.tvName}'s channel to {self.channel}")
-
 # Add instance method for getvolume
+    def getVolume(self):
+        print(f"{self.tvName}'s volume level is on {self.volumeLevel}")
 # Add instance method for setvolume
 # Add instance method for channelup
 # Add instance method for channeldown
