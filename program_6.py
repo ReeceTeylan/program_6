@@ -61,6 +61,13 @@ class TV:
         else:
             print(f"You set {self.tvName}'s volume level to {self.volumeLevel}")
 # Add instance method for channelup
+    def channel1up(self):
+        self.channel += 1
+        if self.channel > 120:
+            self.channel -= 1
+            print(f"{self.tvName}: 120 is the channel limit")
+        else:
+            print(f"You turned {self.tvName}'s channel to {self.channel}")
 # Add instance method for channeldown
 # Add instance method for volumeup
 # Add instance method for volumedown
