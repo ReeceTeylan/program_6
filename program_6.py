@@ -85,3 +85,10 @@ class TV:
         else:
             print(f"You turned {self.tvName}'s volume to {self.volumeLevel}")
 # Add instance method for volumedown
+    def volumeDown(self):
+        self.volumeLevel -= 1
+        if self.volumeLevel < 1:
+            self.volumeLevel += 1
+            print(f"{self.tvName}: 1 is the lowest volume")
+        else:
+            print(f"You turned {self.tvName}'s volume to {self.volumeLevel}")
