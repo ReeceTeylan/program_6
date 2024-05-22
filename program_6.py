@@ -33,9 +33,11 @@ class TV:
         self.on = False
         print(f"{self.tvName} is turned off")
 # Add instance method for getchannel
+    def getChannel(self):
+        print(f"{self.tvName} is on channel {self.channel}")
+# Add instance method for setchannel
 # Add instance method for getvolume
 # Add instance method for setvolume
-# Add instance method for setchannel
 # Add instance method for channelup
 # Add instance method for channeldown
 # Add instance method for volumeup
