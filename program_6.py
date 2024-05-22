@@ -65,9 +65,16 @@ class TV:
         self.channel += 1
         if self.channel > 120:
             self.channel -= 1
-            print(f"{self.tvName}: 120 is the channel limit")
+            print(f"{self.tvName}: There are no channels higher than 120")
         else:
             print(f"You turned {self.tvName}'s channel to {self.channel}")
 # Add instance method for channeldown
+    def channel1down(self):
+        self.channel -= 1
+        if self.channel < 1:
+            self.channel += 1
+            print(f"{self.tvName}: There are no more channels lower than 1")
+        else:
+            print(f"You turned {self.tvName}'s channel to {self.channel}")
 # Add instance method for volumeup
 # Add instance method for volumedown
