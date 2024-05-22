@@ -50,6 +50,16 @@ class TV:
     def getVolume(self):
         print(f"{self.tvName}'s volume level is on {self.volumeLevel}")
 # Add instance method for setvolume
+    def setVolume(self, volumeLevel):
+        self.volumeLevel = volumeLevel
+        if self.volumeLevel > 7:
+            self.volumeLevel = 7
+            print(f"{self.tvName}: 7 is the highest volume")
+        if self.volumeLevel < 1:
+            self.volumeLevel = 1
+            print(f"{self.tvName}: 1 is the lowest volume")
+        else:
+            print(f"You set {self.tvName}'s volume level to {self.volumeLevel}")
 # Add instance method for channelup
 # Add instance method for channeldown
 # Add instance method for volumeup
